@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="thenextapp.listviewexample.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                layout="@layout/header_layout"
+            />
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/myNavigation"
+            android:background="#2196F3"
+            android:orientation="vertical"
+            android:layout_width="250dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/close"
+                android:src="@drawable/ic_close_white_24dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_gravity="top|right"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
